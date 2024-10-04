@@ -1,0 +1,63 @@
+import turtle
+
+# Function to draw a heart shape
+def draw_heart():
+    turtle.fillcolor('red')
+    turtle.begin_fill()
+    turtle.left(140)
+    turtle.forward(224)
+    turtle.circle(-112, 200)
+    turtle.left(120)
+    turtle.circle(-112, 200)
+    turtle.forward(224)
+    turtle.end_fill()
+
+# Function to write the message
+def write_message():
+    turtle.penup()
+    turtle.goto(0, -30)
+    turtle.pendown()
+    turtle.color("white")
+    turtle.write("HAPPY MONTHSARY MYLOVEEEE", align="center", font=("Arial", 16, "bold"))
+    turtle.penup()
+    turtle.goto(0, -60)
+    turtle.pendown()
+    turtle.write("Thank you for being the best girlfriend!", align="center", font=("Arial", 12, "normal"))
+    turtle.penup()
+    turtle.goto(0, -90)
+    turtle.pendown()
+    turtle.write("Thank you for loving me!", align="center", font=("Arial", 12, "normal"))
+    turtle.penup()
+    turtle.goto(0, -120)
+    turtle.pendown()
+    turtle.write("Thank you for treating me right and keeping all the promises!", align="center", font=("Arial", 12, "normal"))
+    turtle.penup()
+    turtle.goto(0, -150)
+    turtle.pendown()
+    turtle.write("I will always be the man that you love!", align="center", font=("Arial", 12, "normal"))
+    turtle.penup()
+    turtle.goto(0, -180)
+    turtle.pendown()
+    turtle.write("Just remember that you have me always!", align="center", font=("Arial", 12, "normal"))
+    turtle.penup()
+    turtle.goto(0, -210)
+    turtle.pendown()
+    turtle.write("Again HAPPY MONTHSARY MYYYY WIFEYYYY!", align="center", font=("Arial", 12, "normal"))
+    turtle.penup()
+    turtle.goto(0, -240)
+    turtle.pendown()
+    turtle.write("ILO VEEEE YOUUUU SOOO MUCHHHH!", align="center", font=("Arial", 12, "normal"))
+
+# Main function to set up the turtle screen
+def main():
+    turtle.speed(2)
+    turtle.bgcolor('light blue')  # Change background to light blue
+    
+    draw_heart()
+    write_message()
+    
+    turtle.hideturtle()
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
